@@ -1,0 +1,15 @@
+#!/bin/python
+
+import sys
+
+emoji = sys.argv[1]
+text = sys.argv[2]
+
+output_str = ""
+
+for word in text.split(" "):
+    output_str = output_str + emoji + word
+
+output_str += emoji
+
+print(output_str)
